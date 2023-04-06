@@ -1,0 +1,12 @@
+.centre-text {
+  display: block;
+  text-align: center;
+}
+
+body {
+  background-color: #585858;
+}
+
+.text-default {
+  color:white;
+}
