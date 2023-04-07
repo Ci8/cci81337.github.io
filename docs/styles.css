@@ -1,84 +1,94 @@
 * {
-  box-sizing: border-box
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html, body {
-  height: 100%;
-  font-family: 'Press Start 2P', cursive;
+    height: 100%;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #container {
-  min-height: 95%;
-  display: flex;
+    min-height: 95%;
+    display: flex;
     padding-top: 10px;
 }
 
 #main {
-  overflow: auto;
-  padding-bottom: 100px;
-  width: 35%;
-  border: 2px solid white;
-  height: 95%;
+    overflow: auto;
+    padding-bottom: 15px;
+    width: 35%;
+    border: 2px solid white;
+    height: 95%;
+    min-width: 330px;
 }
 
 .centre-text {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 
 body {
-  background-image: url(img/bg0.svg);
+    background-image: url(img/bg0.svg);
+    background-attachment: fixed;
 }
 
 .text-default {
-  color:white;
+    color: white;
 }
 
 .text-special {
-  color: white;
-  padding: 4px;
-  padding-top: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.text-special.header {
+    padding-top: 50px;
 }
 
 .header img {
-margin: auto;
-display: block;
-height: 100px;
-width: 100px;
+    margin: auto;
+    display: block;
+    height: 100px;
+    width: 100px;
 }
 
 .header h1 {
-  margin: auto;
-  display: block;
-  align-content: center;
+    margin: auto;
+    display: block;
+    align-content: center;
+}
+
+.link {
+    padding-top: 20px;
 }
 
 a:link {
-  color: white;
+    color: white;
 }
 
 a:visited {
-  color: white;
+    color: white;
 }
 
 a:hover {
-  color: gray;
+    color: gray;
 }
 
 a:active {
-  color: yellow;
+    color: yellow;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .bg {
-  background-color: rgba(0, 0, 0, 0.5); /* black background with 50% opacity */
-  color: white; /* white text */
+    background-color: rgba(0, 0, 0, 0.5); /* black background with 50% opacity */
+    color: white; /* white text */
 }
+
 /*
 .navbar1 {
   width: 100%;
@@ -88,62 +98,91 @@ a {
 */
 
 .navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  width: 25%; /* Four links of equal widths */
-  text-align: center;
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
 }
 
 .navbar a:hover {
-  background-color: #000;
+    background-color: #000;
 }
 
 
 #footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* black background with 50% opacity */
-  color: white; /* white text */
-  padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* black background with 50% opacity */
+    color: white; /* white text */
+    padding: 20px;
 }
 
 .center-div {
-border: 5px solid;
-margin: auto;
-width: 50%;
-padding: 10px;
-position: absolute;
-top: 50;
-left: 50;
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
-.classic{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.classic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5px;
 }
 
 .outer-div {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1820px) {
+    #main {
+        min-width: 600px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main {
+        min-width: 470px;
+    }
+    .text-special.header {
+        padding-top: 30px;
+    }
+    .centre-text {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    #main {
+        min-width: 370px;
+    }
+    .text-special.header {
+        padding-top: 30px;
+    }
+    .centre-text {
+        font-size: 15px;
+    }
+}
