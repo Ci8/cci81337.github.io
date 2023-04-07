@@ -12,7 +12,6 @@ html, body {
 #container {
   min-height: 95%;
   display: flex;
-    padding-top: 10px;
 }
 
 #main {
