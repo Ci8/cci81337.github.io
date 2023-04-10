@@ -118,6 +118,7 @@ a {
     background-color: rgba(0, 0, 0, 0.5); /* black background with 50% opacity */
     color: white; /* white text */
     padding: 20px;
+    border: 2px solid;
 }
 
 .flex {
@@ -134,7 +135,7 @@ a {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     body {
         background-image: url("img/mobile1.svg");
         background-size: cover;
@@ -148,49 +149,70 @@ a {
         padding-top: 30px;
     }
 
-    .centre-text {
+    .contact_email {
         font-size: 15px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     #main {
         min-width: 370px;
     }
 
     .text-special {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .text-special.header {
         padding-top: 20px;
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .link {
         padding-top: 7px;
+        font-size: 13px;
     }
 }
 
 @media screen and (max-width: 400px) {
     #main {
-        min-width: 275px;
-        margin-bottom: 90px;
-    }
-
-    .text-special {
-        font-size: 14px;
+        min-width: 300px;
+        margin-bottom: 50px;
     }
 
     .text-special.header {
-        font-size: 25px;
-    }
-
-    .link {
-        padding-top: 7px;
+        font-size: 20px;
     }
 
     .contact_email {
         font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #main {
+        margin-bottom: 0px;
+    }
+
+    .text-special {
+        font-size: 11px;
+    }
+
+    .text-special.header {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    .link {
+        padding-top: 3px;
+        font-size: 11px;
+    }
+
+    #footer {
+        padding: 13px;
+    }
+
+    .contact_email {
+        font-size: 11px;
     }
 }
