@@ -81,7 +81,7 @@ a:hover {
 }
 
 a:active {
-    color: yellow;
+    color: #3c42fa;
 }
 
 a {
@@ -189,6 +189,7 @@ a {
     .link {
         padding-top: 7px;
     }
+
     .contact_email {
         font-size: 13px;
     }
