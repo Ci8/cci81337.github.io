@@ -82,7 +82,7 @@ a {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    border: 2px solid;
+    border-top: 2px solid;
     padding: 20px;
 }
 
